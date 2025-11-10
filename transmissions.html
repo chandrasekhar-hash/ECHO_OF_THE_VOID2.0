@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHO OF THE VOID: Protocol 7 - Transmission Log</title>
+    <link rel="stylesheet" href="ECHO_OF_THE_VOID_PROJECT/css/style.css">
+</head>
+<body>
+    <div class="monitor-container">
+        <header class="main-header">
+            <div class="logo-container">
+                <img src="ECHO_OF_THE_VOID_PROJECT/images/protocol_7_logo.png" alt="ECHO OF THE VOID Logo" class="site-logo">
+            </div>
+            <nav class="primary-nav">
+                <ul>
+                    <li><a href="index.html">System Status</a></li>
+                    <li><a href="missions.html">Mission Logs</a></li>
+                    <li><a href="diagnostics.html">System Diagnostics</a></li>
+                    <li><a href="transmissions.html" class="active">Transmission Log</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="transmissions-main">
+            <h1 class="page-title">:: INTERCEPTED TRANSMISSION LOG ::</h1>
+            <p class="section-intro">Operational updates, decrypted news alerts, and community reports from the outer rim.</p>
+            <section class="transmission-feed">
+                <article class="transmission-entry high-priority">
+                    <h2 class="transmission-title">ALERT: Anomaly Detection Confirmed (2247.11.01)</h2>
+                    <p class="transmission-metadata">SOURCE: LRS Subsystem | STATUS: CRITICAL</p>
+                    <div class="transmission-content">
+                        <p>Long Range Scanner confirms the presence of an energy signature matching the 'Protocol 7' parameters. All non-essential systems are being shut down. Decryption priority is now set to Log 05.</p>
+                    </div>
+                </article>
+                <article class="transmission-entry dev-update">
+                    <h2 class="transmission-title">Developer Log: ACM Upgrade Patch (2247.10.25)</h2>
+                    <p class="transmission-metadata">SOURCE: Dev/Hangar-Bay | STATUS: NOMINAL</p>
+                    <div class="transmission-content">
+                        <p>The A.I. Command Module has received an integrity patch, reducing the decryption error rate by 5%. This update is effective immediately. Players should notice faster resource management feedback.</p>
+                    </div>
+                </article>
+                <article class="transmission-entry community-report">
+                    <h2 class="transmission-title">Community Report: Sector Gamma-7 Map Released (2247.10.19)</h2>
+                    <p class="transmission-metadata">SOURCE: Community Forums | STATUS: ARCHIVED</p>
+                    <div class="transmission-content">
+                        <p>A high-resolution map of the Gamma-7 Sector has been shared by operative 'Cipher_20'. Review the map in the Diagnostics section for strategic planning.</p>
+                    </div>
+                </article>
+                <button class="load-more-button">:: LOAD ARCHIVED TRANSMISSIONS ::</button>
+            </section>
+        </main>
+        <aside class="telemetry-feed-aside">
+            <h3 class="feed-header">:: REAL-TIME LOG ::</h3>
+            <div class="log-output" id="telemetry-log">
+                <p>[INIT] Loading system assets...</p>
+                <p>[CHECK] Life Support: 48:00 hours.</p>
+                <p>[ALERT] Signal Attenuation 12%...</p>
+                <div class="glitch-signal-placeholder">
+                    <img src="ECHO_OF_THE_VOID_PROJECT/images/broken_signal.png" alt="Corrupted Signal Glitch" class="glitch-visual">
+                </div>
+            </div>
+            <button id="color-toggle" class="control-button">TOGGLE MONITOR MODE</button>
+        </aside>
+    </div> 
+    <script src="ECHO_OF_THE_VOID_PROJECT/js/app.js" defer></script>
+</body>
+</html>

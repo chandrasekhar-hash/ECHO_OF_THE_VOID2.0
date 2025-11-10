@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHO OF THE VOID: Protocol 7 - System Status</title>
+    <link rel="stylesheet" href="ECHO_OF_THE_VOID_PROJECT/css/style.css">
+</head>
+<body>
+    <div class="monitor-container">
+        <header class="main-header">
+            <div class="logo-container">
+                <img src="ECHO_OF_THE_VOID_PROJECT/images/protocol_7_logo.png" alt="ECHO OF THE VOID Logo" class="site-logo">
+            </div>
+            <nav class="primary-nav">
+                <ul>
+                    <li><a href="index.html" class="active">System Status</a></li>
+                    <li><a href="missions.html">Mission Logs</a></li>
+                    <li><a href="diagnostics.html">System Diagnostics</a></li>
+                    <li><a href="transmissions.html">Transmission Log</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="system-status-main">
+            <section class="hero-wireframe-display">
+                <img src="ECHO_OF_THE_VOID_PROJECT/images/hero_wireframe.png" alt="VOID-ECHO-7 Ship Wireframe" class="ship-visual">
+                <div class="call-to-action">
+                    <h1>PROTOCOL 7</h1>
+                    <p>SYSTEM ACCESS REQUIRED. DECRYPT. SURVIVE.</p>
+                    <button class="action-button">
+                        <img src="ECHO_OF_THE_VOID_PROJECT/images/power_core.png" alt="Activate Protocol Icon" class="button-icon">
+                        Launch Protocol
+                    </button>
+                </div>
+            </section>
+            <section class="data-panels-grid">
+                <article class="data-panel panel-corruption">
+                    <p class="panel-title">Data Integrity</p>
+                    <img src="ECHO_OF_THE_VOID_PROJECT/images/data_graph_01.png" alt="Data Corruption Chart" class="panel-visual">
+                    <p class="data-reading">42% Corrupt</p>
+                </article>
+                <article class="data-panel panel-trajectory">
+                    <p class="panel-title">System Trajectory</p>
+                    <img src="ECHO_OF_THE_VOID_PROJECT/images/data_graph_02.png" alt="System Trajectory Radar" class="panel-visual">
+                    <p class="data-reading">Alert Zone Theta-9</p>
+                </article>
+            </section>
+        </main> 
+        <aside class="telemetry-feed-aside">
+            <h3 class="feed-header">:: REAL-TIME LOG ::</h3>
+            <div class="log-output" id="telemetry-log">
+                <p>[INIT] Loading system assets...</p>
+                <p>[CHECK] Life Support: 48:00 hours.</p>
+                <p>[ALERT] Signal Attenuation 12%...</p>
+                <div class="glitch-signal-placeholder">
+                    <img src="ECHO_OF_THE_VOID_PROJECT/images/broken_signal.png" alt="Corrupted Signal Glitch" class="glitch-visual">
+                </div>
+            </div>
+            <button id="color-toggle" class="control-button">TOGGLE MONITOR MODE</button>
+        </aside>
+    </div> 
+    <script src="ECHO_OF_THE_VOID_PROJECT/js/app.js" defer></script>
+</body>
+</html>

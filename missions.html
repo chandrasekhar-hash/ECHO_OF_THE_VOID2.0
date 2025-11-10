@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHO OF THE VOID: Protocol 7 - Mission Logs</title>
+    <link rel="stylesheet" href="ECHO_OF_THE_VOID_PROJECT/css/style.css">
+</head>
+<body>
+    <div class="monitor-container">
+        <header class="main-header">
+            <div class="logo-container">
+                <img src="ECHO_OF_THE_VOID_PROJECT/images/protocol_7_logo.png" alt="ECHO OF THE VOID Logo" class="site-logo">
+            </div>
+            <nav class="primary-nav">
+                <ul>
+                    <li><a href="index.html">System Status</a></li>
+                    <li><a href="missions.html" class="active">Mission Logs</a></li>
+                    <li><a href="diagnostics.html">System Diagnostics</a></li>
+                    <li><a href="transmissions.html">Transmission Log</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mission-logs-main">
+            <section class="log-archive">
+                <h1 class="page-title">:: DECLASSIFIED MISSION LOGS ::</h1>
+                <p class="section-intro">Review critical data from VOID-ECHO-7. Decrypting logs may reveal Protocol 7 details.</p>
+                <article class="log-entry" id="log-01">
+                    <h2 class="log-title">LOG_001: Initial Deployment</h2>
+                    <p class="log-metadata">DATE: 2247.10.15 | STATUS: DECRYPTED</p>
+                    <div class="log-content">
+                        <p>Entry by Captain E. Voronov. Our journey to Sector Gamma-7 has begun. The VOID-ECHO-7's systems are nominal. Morale is high. We expect to reach the anomaly in approximately 72 cycles. Initial telemetry reports no unusual gravitational shifts.</p>
+                    </div>
+                </article>
+                <article class="log-entry" id="log-02">
+                    <h2 class="log-title">LOG_002: Anomaly Approach</h2>
+                    <p class="log-metadata">DATE: 2247.10.18 | STATUS: ENCRYPTED</p>
+                    <div class="log-content encrypted-content">
+                        <img src="ECHO_OF_THE_VOID_PROJECT/images/Narrative visuals.png.jpg" alt="Corrupted visual from log" class="log-visual-corrupt">
+                        <p class="encrypted-text">[DATA CORRUPTED_SEVERITY: HIGH] Attempting decryption... Signal integrity below threshold. Further data required.</p>
+                        <button class="decrypt-button">Decrypt Log (2 Data Cores)</button>
+                    </div>
+                </article>
+                <article class="log-entry" id="log-03">
+                    <h2 class="log-title">LOG_003: First Contact Protocol</h2>
+                    <p class="log-metadata">DATE: 2247.10.19 | STATUS: ENCRYPTED</p>
+                    <div class="log-content encrypted-content">
+                        <p class="encrypted-text">[TRANSMISSION UNSTABLE] ...unknown energy signature... analysis inconclusive... recommend immediate withdrawal...</p>
+                        <button class="decrypt-button">Decrypt Log (3 Data Cores)</button>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <aside class="telemetry-feed-aside">
+            <h3 class="feed-header">:: REAL-TIME LOG ::</h3>
+            <div class="log-output" id="telemetry-log">
+                <p>[INIT] Loading system assets...</p>
+                <p>[CHECK] Life Support: 48:00 hours.</p>
+                <p>[ALERT] Signal Attenuation 12%...</p>
+                <div class="glitch-signal-placeholder">
+                    <img src="ECHO_OF_THE_VOID_PROJECT/images/broken_signal.png" alt="Corrupted Signal Glitch" class="glitch-visual">
+                </div>
+            </div>
+            <button id="color-toggle" class="control-button">TOGGLE MONITOR MODE</button>
+        </aside>
+    </div> 
+    <script src="ECHO_OF_THE_VOID_PROJECT/js/app.js" defer></script>
+</body>
+</html>

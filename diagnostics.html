@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHO OF THE VOID: Protocol 7 - System Diagnostics</title>
+    <link rel="stylesheet" href="ECHO_OF_THE_VOID_PROJECT/css/style.css">
+</head>
+<body>
+    <div class="monitor-container">
+        <header class="main-header">
+            <div class="logo-container">
+                <img src="ECHO_OF_THE_VOID_PROJECT/images/protocol_7_logo.png" alt="ECHO OF THE VOID Logo" class="site-logo">
+            </div>
+            <nav class="primary-nav">
+                <ul>
+                    <li><a href="index.html">System Status</a></li>
+                    <li><a href="missions.html">Mission Logs</a></li>
+                    <li><a href="diagnostics.html" class="active">System Diagnostics</a></li>
+                    <li><a href="transmissions.html">Transmission Log</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="diagnostics-main">
+            <h1 class="page-title">:: VOID-ECHO-7 DIAGNOSTICS REPORT ::</h1>
+            <p class="section-intro">Live readings and subsystem status reports. Priority action required for Red status alerts.</p>
+            <section class="critical-readouts">
+                <article class="system-module module-life-support">
+                    <h2 class="module-title">Life Support</h2>
+                    <p class="status-reading status-critical">48:05:12 Remaining</p>
+                    <p class="module-detail">Air Filtration: 62% efficiency.</p>
+                </article>
+                <article class="system-module module-hull-integrity">
+                    <h2 class="module-title">Hull Integrity</h2>
+                    <p class="status-reading status-warning">55% Stable</p>
+                    <p class="module-detail">Sector Gamma-7 microfractures detected.</p>
+                </article>
+                <article class="system-module module-power-grid">
+                    <h2 class="module-title">Power Grid</h2>
+                    <p class="status-reading status-nominal">98% Output</p>
+                    <p class="module-detail">Divert power capability: Operational.</p>
+                </article>
+            </section>
+            <section class="subsystem-specs">
+                <h2 class="section-header">Subsystem Technical Specifications</h2>
+                <details class="spec-detail-panel">
+                    <summary class="spec-title">A.I. COMMAND MODULE (ACM)</summary>
+                    <div class="spec-content">
+                        <p>Function: Assists in resource allocation and decryption attempts (Protocol 7). Currently operating at 70% capacity due to data corruption.</p>
+                        <ul class="spec-list">
+                            <li>Decryption Speed: 1.2s per core</li>
+                            <li>Error Rate: 4.5%</li>
+                        </ul>
+                    </div>
+                </details>
+                <details class="spec-detail-panel">
+                    <summary class="spec-title">LONG-RANGE SCANNER (LRS)</summary>
+                    <div class="spec-content">
+                        <p>Function: Capable of detecting deep-space anomalies. Requires stable power input.</p>
+                        <ul class="spec-list">
+                            <li>Range Max: 400 AU</li>
+                            <li>Last Scan: 2247.10.29 08:30 UTC</li>
+                        </ul>
+                    </div>
+                </details>
+            </section>
+        </main>
+        <aside class="telemetry-feed-aside">
+            <h3 class="feed-header">:: REAL-TIME LOG ::</h3>
+            <div class="log-output" id="telemetry-log">
+                <p>[INIT] Loading system assets...</p>
+                <p>[CHECK] Life Support: 48:00 hours.</p>
+                <p>[ALERT] Signal Attenuation 12%...</p>
+                <div class="glitch-signal-placeholder">
+                    <img src="ECHO_OF_THE_VOID_PROJECT/images/broken_signal.png" alt="Corrupted Signal Glitch" class="glitch-visual">
+                </div>
+            </div>
+            <button id="color-toggle" class="control-button">TOGGLE MONITOR MODE</button>
+        </aside>
+    </div> 
+    <script src="ECHO_OF_THE_VOID_PROJECT/js/app.js" defer></script>
+</body>
+</html>
